@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProjectCloud.iml" filepath="$PROJECT_DIR$/ProjectCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-cloud.iml" filepath="$PROJECT_DIR$/project-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restapi/rest-api.iml" filepath="$PROJECT_DIR$/restapi/rest-api.iml" />
     </modules>
   </component>
 </project>
