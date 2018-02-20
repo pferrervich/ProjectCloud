@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="restapi" />
+        <module name="presentationlayer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="restapi" target="1.5" />
+      <module name="presentationlayer" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

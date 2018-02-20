@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/restapi.iml" filepath="$PROJECT_DIR$/restapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/presentationlayer.iml" filepath="$PROJECT_DIR$/presentationlayer.iml" />
     </modules>
   </component>
 </project>

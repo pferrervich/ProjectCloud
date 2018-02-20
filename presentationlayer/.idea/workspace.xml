@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="039714de-7eed-43ce-9ae9-95b5fe4f00ac" name="Default" comment="" />
+    <list default="true" id="4f796096-ef7a-44b5-aec2-75e9d3a8ce32" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,10 +37,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="84" />
-    <option name="y" value="59" />
-    <option name="width" value="1181" />
-    <option name="height" value="657" />
+    <option name="x" value="340" />
+    <option name="y" value="88" />
+    <option name="width" value="986" />
+    <option name="height" value="601" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -58,20 +58,10 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="restapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restapi" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -186,12 +176,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="039714de-7eed-43ce-9ae9-95b5fe4f00ac" name="Default" comment="" />
-      <created>1519155292901</created>
+      <changelist id="4f796096-ef7a-44b5-aec2-75e9d3a8ce32" name="Default" comment="" />
+      <created>1519163537905</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1519155292901</updated>
-      <workItem from="1519155299057" duration="4000" />
+      <updated>1519163537905</updated>
+      <workItem from="1519163542072" duration="4000" />
     </task>
     <servers />
   </component>
