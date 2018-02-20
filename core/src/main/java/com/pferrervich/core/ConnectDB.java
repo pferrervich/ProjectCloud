@@ -1,4 +1,4 @@
-package com.pferrervich.restapi;
+package com.pferrervich.core;
 
 import java.sql.*;
 import java.util.ArrayList;

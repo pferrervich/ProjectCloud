@@ -1,4 +1,4 @@
-package com.pferrervich.restapi;
+package com.pferrervich.core;
 
 public class User extends DBObject {
     private int id;

@@ -1,4 +1,4 @@
-package com.pferrervich.restapi;
+package com.pferrervich.core;
 
 
 import org.slf4j.Logger;

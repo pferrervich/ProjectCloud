@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="presentation-layer:war">
+    <output-path>$PROJECT_DIR$/presentationlayer/target</output-path>
+    <root id="archive" name="presentation-layer-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="presentation-layer:war exploded" />
+    </root>
+  </artifact>
+</component>
