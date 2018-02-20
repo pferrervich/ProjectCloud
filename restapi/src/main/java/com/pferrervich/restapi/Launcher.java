@@ -80,6 +80,8 @@ public class Launcher {
             return user;
         }, new JsonTransformer());
         //biconditional response way2: via jackson
+
+
         get("/restaurants", (request, response) -> {
             ArrayList<Restaurants> lRest = ConnectDB.readRestaurantapi();
             if (shouldReturnHtml(request)) {

@@ -25,6 +25,8 @@
     <!-- Nombre de los modulos -->
     <modules>
         <module>core</module>
+        <module>presentationlayer</module>
+        <module>restapi</module>
     </modules>
     <!-- Dependencias -->
     <dependencies>
