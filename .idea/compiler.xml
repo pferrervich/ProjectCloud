@@ -9,6 +9,7 @@
         <module name="core" />
         <module name="presentation-layer" />
         <module name="rest-api" />
+        <module name="rest-spring-front" />
         <module name="restapi" />
         <module name="restapi (1) (restapi)" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="project-cloud" target="1.8" />
       <module name="ProjectCloud" target="1.5" />
       <module name="rest-api" target="1.8" />
+      <module name="rest-spring-front" target="1.5" />
       <module name="restapi" target="1.5" />
       <module name="restapi (1) (restapi)" target="1.5" />
     </bytecodeTargetLevel>

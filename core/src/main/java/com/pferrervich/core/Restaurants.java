@@ -1,5 +1,6 @@
 package com.pferrervich.core;
 
+//TODO: Entity en restaurants
 public class Restaurants {
     private String name;
     private String address;
