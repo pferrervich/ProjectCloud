@@ -73,11 +73,12 @@ public class Launcher {
         }*/
         //hello world for dummies, via lambdas
         get("/hello", (req, res) -> "Hello World");
+
         //json response way1: via spark renderer
+        //Hace un servlet con el PATH /json, se especifica el tipo, y lo transforma en Json.
         get("/json", "application/json", (request, response) -> {
-            User user = new User();
-            user.setName("Hello world!");
-            return user;
+           ArrayList<Restaurants> lRest = ConnectDB.readRestaurantapi();
+           return lRest;
         }, new JsonTransformer());
         //biconditional response way2: via jackson
 

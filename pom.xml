@@ -6,6 +6,8 @@
 
     <groupId>com.pferrervich.projectcloud</groupId>
     <artifactId>project-cloud</artifactId>
+    <!-- Empaqueta todos los poms -->
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <build>
@@ -35,6 +37,7 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.21</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>

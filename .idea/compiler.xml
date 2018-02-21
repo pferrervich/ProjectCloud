@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
         <module name="presentation-layer" />
-        <module name="project-cloud" />
         <module name="rest-api" />
         <module name="restapi" />
         <module name="restapi (1) (restapi)" />

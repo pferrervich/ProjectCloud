@@ -8,12 +8,21 @@ import java.util.ArrayList;
  */
 
 public class ConnectDB {
+    /**
+     * Functional. Se establecen las funciones de los parámetros para que se puedan utilizar las funciones directamente,
+     * en lugar de escribir cada vez los datos que se repiten.
+     */
+    private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
+    private static final String THIN_URL = "jdbc:oracle:thin:@35.205.41.45:1521:XE";
+    private static final String USER = "usuari";
+    private static final String PASSWORD = "usuari";
+
     public static ArrayList readRestaurant(String search) {
         ArrayList al = new ArrayList();
         try {
 
-            Class.forName("oracle.jdbc.driver.OracleDriver");       // Driver per a que llegeixi la base de dades
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@35.205.41.45:1521:XE", "usuari","usuari");      //Connexió a la base de dades
+            Class.forName(DRIVER);       // Driver per a que llegeixi la base de dades
+            Connection con = DriverManager.getConnection(THIN_URL, USER, PASSWORD);      //Connexió a la base de dades
 
             PreparedStatement pstmt;
 
@@ -84,8 +93,8 @@ public class ConnectDB {
 
 
 
-            Class.forName("oracle.jdbc.driver.OracleDriver");       // Driver per a que llegeixi la base de dades
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@35.205.41.45:1521:XE", "usuari","usuari");      //Connexió a la base de dades
+            Class.forName(DRIVER);       // Driver per a que llegeixi la base de dades
+            Connection con = DriverManager.getConnection(THIN_URL, USER, PASSWORD);      //Connexió a la base de dades
 
             PreparedStatement pstmt;
 
@@ -145,8 +154,8 @@ public class ConnectDB {
         ArrayList<Restaurants> all = new ArrayList<>();
         try {
 
-            Class.forName("oracle.jdbc.driver.OracleDriver");       // Driver per a que llegeixi la base de dades
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@35.205.41.45:1521:XE", "usuari","usuari");      //Connexió a la base de dades
+            Class.forName(DRIVER);       // Driver per a que llegeixi la base de dades
+            Connection con = DriverManager.getConnection(THIN_URL, USER,PASSWORD);      //Connexió a la base de dades
 
             PreparedStatement pstmt;
 

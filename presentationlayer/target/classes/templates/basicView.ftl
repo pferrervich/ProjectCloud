@@ -1,17 +1,45 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <title>${title!""}</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <title>${title!""}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-52tWTPZ1e5eK+C2aGPCgDjrEgVkKMO+0qDuRNj3tS2EugIrICHWqkGuLu442CP2S" crossorigin="anonymous">    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Restaurants</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inici <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="test">Enllaç 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="test">Enllaç 2</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" name="search" placeholder="Cercar" aria-label="Cercar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cercar</button>
+        </form>
+    </div>
+</nav>
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">IES Emili Darder</a>
+    <a class="navbar-brand" href="#">Restaurants</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,41 +47,42 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Inici <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Other actions</a>
+                <a class="nav-link" href="test">Enllaç 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="test">Enllaç 2</a>
             </li>
         </ul>
     </div>
 </nav>
-<main role="main" class="container">
-    <div class="row featurette">
-        <div class="col-md-7">
-            <h1>${title!""}</h1>
-            <h2 class="featurette-heading">${subtitle!""}
-                <br/>
-            </h2>
-        </div>
-        <div class="col-md-5">
-            <img src="http://www.restaurantesaboya21.com/img/portada/fotos2/imagen1.jpg"/>
+<main role="main" >
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Troba els millors restaurants de Mallorca</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <p><a class="btn btn-primary btn-lg" href="test" role="button">Learn more &raquo;</a></p>
         </div>
     </div>
 <#if posts??>
-    <div class="row center mt-2">
+    <div class="container">
         <#list posts as item>
-            <div class="col-md-3">
-                <div class="media mt-5 ml-5">
-                    <img class="align-self-start mr-3 rounded-circle"
-                         src="${item.imgurl!""}"
-                         alt="Restaurant Image" width="80" height="80">
-                    <div class="media-body">
-                        <h5 class="mt-0">${item.name!""}</h5>
-                        <p>Telefon: ${item.telephone!""}</p>
-                        <p>Tipus: ${item.type!""}</p>
-                    </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="${item.imgurl!""}">
                 </div>
-            </div>
+                <div class="col-md-8">
+                    <h2 class="mt-0">${item.name!""}</h2>
+                    <hr>
+                    <p>Tipus: ${item.type!""}</p>
+                    <p>Pagina web: ${item.website!""}</p>
+                    <p>Adreça: ${item.address!""}</p>
+                    <p>Telefon: ${item.telephone!""}</p>
+                    <p><a class="btn btn-secondary" href="restaurant?id='${item.codi!""}'" role="button">Més informació </a></p>
+                </div>
+                </div>
         </#list>
     </div>
 </#if>
